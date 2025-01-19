@@ -1,0 +1,10 @@
+spring:
+  quartz:
+    job-store-type: memory # ??? ??? ????? ??
+    properties:
+      org:
+        quartz:
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10      # Quartz ? ??? ??? ?
+            threadPriority: 5
